@@ -1,0 +1,78 @@
+[PARSEC] Benchmarks to run:  splash2x.ocean_ncp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_ncp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/yjsohn/origin_parsec/parsec3_on_ubuntu/parsec-3.0/ext/splash2x/apps/ocean_ncp/inst/amd64-linux.gcc/bin/run.sh 1 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running /home/yjsohn/origin_parsec/parsec3_on_ubuntu/parsec-3.0/ext/splash2x/apps/ocean_ncp/inst/amd64-linux.gcc/bin/ocean_ncp -n4098 -p1 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+print sizeof long : { 8 }, sizeof double : { 8 }
+print sizeof IMAX : { 8098 }, sizeof JMAX : { 8098 }, sizeof INPROCS { 1024 }, sizeof MAX_LEVELS { 14 }
+sizeof alloc_gp : { 8 }
+sizeof alloc_global : { 8 }
+sizeof alloc_fields : { 8 }
+sizeof alloc_fields2 : { 8 }
+sizeof alloc_wrk1 : { 8 }
+sizeof alloc_wrk2 : { 8 }
+sizeof alloc_wrk3 : { 8 }
+sizeof alloc_wrk4 : { 8 }
+sizeof alloc_wrk5 : { 8 }
+sizeof alloc_wrk6 : { 8 }
+sizeof alloc_frcng : { 8 }
+sizeof alloc_iter : { 8 }
+sizeof alloc_guess : { 8 }
+sizeof alloc_multi : { 8 }
+sizeof alloc_locks : { 8 }
+sizeof alloc_bars : { 8 }
+alloc_gp { 13608 } sizeof(Global_Private) { 6800 }
+alloc_global { 40 } sizeof(global_struct) { 40 }
+alloc_fields { 2098487280 } sizeof(fields_struct) { 2098483328 }
+alloc_fields2 { 1049243632 } sizeof(fields2_struct) { 1049241664 }
+alloc_wrk1 { 1573863408 } sizeof(wrk1_struct) { 1573862496 }
+alloc_wrk2 { 524689392 } sizeof(wrk2_struct) { 524685616 }
+alloc_wrk3 { 1573863408 } sizeof(wrk3_struct) { 1573862496 }
+alloc_wrk4 { 2098487280 } sizeof(wrk4_struct) { 2098483328 }
+alloc_wrk5 { 2098487280 } sizeof(wrk5_struct) { 2098483328 }
+alloc_wrk6 { 524623856 } sizeof(wrk6_struct) { 524620832 }
+alloc_frcng { 524623856 } sizeof(frcng_struct) { 524620832 }
+alloc_iter { 1049243632 } sizeof(iter_struct) { 1049241672 }
+alloc_guess { 1049243632 } sizeof(guess_struct) { 1049241664 }
+alloc_multi { 1804492784 } sizeof(multi_struct) { 14689391504 }
+alloc_locks { 248 } sizeof(locks_struct) { 240 }
+alloc_bars { 104 } sizeof(bars_struct) { 104 }
+sum_alloc : 15969363440, sum_struct_alloc : 28854225944
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          82174721           49441394             0.602
+
+                       TIMING INFORMATION
+Start time                        : 1611287971085807
+Initialization finish time        : 1611287980667688
+Overall finish time               : 1611288062842410
+Total time with initialization    :         91756603
+Total time without initialization :         82174722
+    (excludes first timestep)
+
+
+real	1m31.780s
+user	1m30.311s
+sys	0m1.438s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.

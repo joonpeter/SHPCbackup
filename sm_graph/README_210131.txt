@@ -1,0 +1,18 @@
+0) 
+$ bin2txt.py sum-1208.data > sum-*.txt
+
+1)
+* access_pattern_ver2.c
+# gcc access_pattern_ver2.c -o access_pattern_ver2
+$ ./access_pattern_ver2
+: input 파일을 sum-*.txt 넣어서 output 파일을 output-*-*로 생성해줌.
+
+2)
+* graph.py
+: outpu-*-*과 pointer.txt 두 개의 파일 열여서 그래프 그려줌:test*png
+
+*** 참고로 내가 그래프 그리기 위해서 만든 python은 3.5 버전: graph.py
+*** 에서 실행해야함.
+
+$ update-alternatives --config python 
+해서 나오면 버전 선택하면됨
